@@ -5,7 +5,7 @@ object Q2 {
 
     for(x<-0 to num)
       {
-        if(prime(x))
+        if(primeSeq(x))
           {
             println(x);
           }
@@ -13,7 +13,7 @@ object Q2 {
 
   }
 
-  def prime(x:Int,i:Int=2):Boolean={
+  def primeSeq(x:Int,i:Int=2):Boolean={
     if(x<=2)
     {
       if(x==2)
@@ -33,7 +33,7 @@ object Q2 {
     {
       return true;
     }
-    return prime(x,i+1);
+    return primeSeq(x,i+1);
 
   }
 
